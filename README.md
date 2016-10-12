@@ -3,6 +3,8 @@ Kenneth Falck <kennu@sc5.io> 2016
 
 ## Overview
 
+Compatibility: Serverless 1.0
+
 This plugin allows you to define your own API Gateway Authorizers as
 the Serverless CloudFormation resources and apply them to HTTP endpoints.
 Currently the main use case for this is to enable Cognito User Pool
