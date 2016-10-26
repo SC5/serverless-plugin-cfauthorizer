@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-cfauthorizer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Kenneth Falck <kennu@sc5.io> 2016",
   "main": "index.js",
   "scripts": {
