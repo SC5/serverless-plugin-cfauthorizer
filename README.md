@@ -10,7 +10,11 @@ the Serverless CloudFormation resources and apply them to HTTP endpoints.
 Currently the main use case for this is to enable Cognito User Pool
 authorizers, which are not yet supported by Serverless 1.0.
 
-## Configuration
+## Installation
+
+    npm install --save serverless-plugin-cfauthorizer
+
+## Configuration (serverless.yml)
 
 You will first need to add a custom authorizer in the custom cfAuthorizers
 section of your serverless.yml. Here is an example of a Cognito User Pool
