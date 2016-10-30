@@ -56,7 +56,7 @@ class UserPoolPlugin {
       })
 
       // Add custom authorizer resources to CloudFormation resources
-      const cfAuthorizers = this.serverless.service.custom.cfAuthorizers
+      const cfAuthorizers = this.serverless.service.custom.cfAuthorizers || {}
       Object.keys(cfAuthorizers).map(resourceName => {
         const properties = cfAuthorizers[resourceName]
         properties.RestApiId = {
