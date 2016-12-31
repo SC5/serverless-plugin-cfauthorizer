@@ -72,6 +72,10 @@ class UserPoolPlugin {
 
   // Get the full API Gateway resource path of a relative resource
   getResourcePath(resource, resources) {
+    if (!resource) {
+        // Special case for root path
+        return '/'
+    }
     if (resource.Properties.ParentId && resource.Properties.ParentId.Ref) {
       // Add next resource parent
       return this.getResourcePath(resources[resource.Properties.ParentId.Ref], resources) + '/' + resource.Properties.PathPart
